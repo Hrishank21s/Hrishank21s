@@ -11,23 +11,21 @@ I'm especially interested in **AI-assisted development, developer tooling, autom
 ## 🚀 What I'm Building
 
 - 🧩 **TableTracker** — tournament and club-management software built around real-world workflows.
-- 🏆 **Club Tournament** — tools for running and managing tournaments.
+- 🏆 **Club Tournament** — tools for running and managing pool tournaments end to end.
 - 🤖 **AI & Developer Tooling** — experimenting with local AI, coding agents, automation, and developer workflows.
 - 🛠️ **DIY / Hardware Projects** — ESP and electronics projects alongside software.
-- 🧪 **Experiments** — trading automation, web projects, backend systems, and ideas that turn into something bigger.
+- 🧪 **Experiments** — trading automation, web projects, and backend systems.
+
+Most of this is under active, private development. Public work is below.
 
 ---
 
-## ⭐ Featured Projects
+## ⭐ Featured
 
 | Project | What it is |
 | --- | --- |
-| [TableTracker](https://github.com/Hrishank21s/table-tracker-v8) | Tournament / club management platform |
-| [Club Tournament](https://github.com/Hrishank21s/club-tournament) | Tournament management project |
-| [OpenCode](https://github.com/Hrishank21s/opencode) | Developer tooling / experimentation |
-| [3D India Backend](https://github.com/Hrishank21s/3d-india-backend) | Backend-focused project |
-| [Trading Bot](https://github.com/Hrishank21s/Trading-bot-V1) | Trading automation experiment |
-| [ESP Project](https://github.com/Hrishank21s/ESP-Project) | Hardware / embedded project |
+| [Portfolio site](https://hrishank21s.github.io) | Overview of my work across AI, software, automation and hardware — [source](https://github.com/Hrishank21s/hrishank21s.github.io) |
+| [Kali Dinali](https://github.com/Hrishank21s/kali-dinali-releases) | Android shop-management app — release builds and install guide |
 
 ---
 
@@ -55,7 +53,3 @@ I'm especially interested in **AI-assisted development, developer tooling, autom
 > Build it. Test it. Break it. Fix it. Ship it.
 
 I like learning by building — turning rough ideas into working systems and continuously improving them.
-
----
-
-⭐ If something here is useful or interesting, feel free to explore the repositories.
