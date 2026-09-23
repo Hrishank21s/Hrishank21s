@@ -1,6 +1,6 @@
 """Totals-only stats for local work. Writes local-stats.json (numbers only, no names/paths).
 Usage: python3 scripts/local_stats.py ~/Desktop/Projects"""
-import hashlib, json, os, sys
+import hashlib, json, os, subprocess, sys
 
 ROOT = os.path.expanduser(sys.argv[1])
 SKIP = {"node_modules", ".git", ".venv", "venv", "target", "dist", "build", "__pycache__", ".next", ".wrangler", ".claude", ".memory-index", "python_modules", "vendor", "site-packages", "pyodide-venv", ".pytest_cache", "coverage", "playwright-report"}
@@ -28,5 +28,12 @@ for name in sorted(os.listdir(ROOT)):
                 except OSError:
                     pass
     projects += n > 0
-json.dump({"projects": projects, "lines": lines, "files": files, "sessions": len(sessions)}, open("local-stats.json", "w"))
+def gh_count(q):  # the local gh login sees private repos, so this covers what the Action's token may not
+    r = subprocess.run(["gh", "api", "-X", "GET", "search/issues", "-f", f"q={q}", "--jq", ".total_count"], capture_output=True, text=True)
+    return int(r.stdout) if r.returncode == 0 and r.stdout.strip().isdigit() else 0
+
+U = "Hrishank21s"
+json.dump({"projects": projects, "lines": lines, "files": files, "sessions": len(sessions),
+           "issues": gh_count(f"author:{U} type:issue"), "prs": gh_count(f"author:{U} type:pr"),
+           "reviews": gh_count(f"reviewed-by:{U} type:pr -author:{U}")}, open("local-stats.json", "w"))
 print(projects, lines, files, len(sessions))

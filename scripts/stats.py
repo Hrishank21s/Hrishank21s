@@ -31,6 +31,9 @@ def count(q):
 # restrictedContributionsCount, so subtract them out to keep "commits" a commit count.
 iss, prs, rev = (count(f"author:{USER} type:issue"), count(f"author:{USER} type:pr"), count(f"reviewed-by:{USER} type:pr -author:{USER}"))
 print("search counts (issues, prs, reviews):", iss, prs, rev)
+if os.path.exists("local-stats.json"):  # fallback when the token lacks Issues/PRs read: use the Mac-side counts
+    L0 = json.load(open("local-stats.json"))
+    iss, prs, rev = max(iss, L0.get("issues", 0)), max(prs, L0.get("prs", 0)), max(rev, L0.get("reviews", 0))
 priv_noncommit = max(0, (iss - tot["issues"]) + (prs - tot["prs"]) + (rev - tot["reviews"]))
 tot["commits"] -= min(priv_noncommit, tot["commits"])
 yr = gql(f'{{user(login:"{USER}"){{contributionsCollection{{contributionCalendar{{totalContributions}}}}}}}}')["contributionsCollection"]["contributionCalendar"]["totalContributions"]
