@@ -1,5 +1,5 @@
 """Totals-only stats card (public + private). Never emits repo names or content."""
-import datetime as dt, json, os, urllib.request
+import datetime as dt, json, os, urllib.parse, urllib.request
 
 USER = "Hrishank21s"
 TOKEN = os.environ["STATS_TOKEN"]
@@ -22,8 +22,18 @@ for y in range(int(u["createdAt"][:4]), dt.date.today().year + 1):
     tot["issues"] += c["totalIssueContributions"]
     tot["reviews"] += c["totalPullRequestReviewContributions"]
 
-rows = [("Total Commits (public + private)", tot["commits"]), ("Pull Requests", tot["prs"]),
-        ("Issues", tot["issues"]), ("Code Reviews", tot["reviews"]),
+def count(q):
+    r = urllib.request.Request("https://api.github.com/search/issues?per_page=1&q=" + urllib.parse.quote(q),
+                               headers={"Authorization": f"bearer {TOKEN}"})
+    return json.load(urllib.request.urlopen(r))["total_count"]
+
+# Search sees private repos the token can read; GraphQL folds private issues/PRs/reviews into
+# restrictedContributionsCount, so subtract them out to keep "commits" a commit count.
+iss, prs, rev = (count(f"author:{USER} type:issue"), count(f"author:{USER} type:pr"), count(f"reviewed-by:{USER} type:pr -author:{USER}"))
+priv_noncommit = max(0, (iss - tot["issues"]) + (prs - tot["prs"]) + (rev - tot["reviews"]))
+tot["commits"] -= min(priv_noncommit, tot["commits"])
+rows = [("Total Commits (public + private)", tot["commits"]), ("Pull Requests", max(prs, tot["prs"])),
+        ("Issues", max(iss, tot["issues"])), ("Code Reviews", max(rev, tot["reviews"])),
         ("Repositories", u["repositories"]["totalCount"]),
         ("Stars Earned", sum(n["stargazerCount"] for n in u["repositories"]["nodes"]))]
 body = "".join(f'<text x="25" y="{65+i*26}" class="l">{k}</text><text x="395" y="{65+i*26}" class="v" text-anchor="end">{v}</text>'
