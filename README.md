@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=150&color=0:0f172a,100:3730a3&text=Hrishank%20Soni&fontColor=e2e8f0&fontSize=40&fontAlignY=40&animation=fadeIn&desc=Builder%20%E2%80%A2%20Developer%20%E2%80%A2%20Maker&descAlignY=60&descSize=16" alt="Hrishank Soni — Builder, Developer, Maker" />
+<img src="banner.svg" width="100%" alt="Hrishank Soni — Builder, Developer, Maker. Pac-Man eating lines of code." />
 
 **I build practical software, automation, AI tools and hardware — taking ideas from *"can we build this?"* to something actually running.**
 
