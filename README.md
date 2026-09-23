@@ -52,8 +52,8 @@ Most of this is under active, private development. Public work is below.
 
 <div align="center">
 
-<a href="https://github.com/Hrishank21s"><img height="180" src="stats.svg" alt="GitHub stats" /></a>
-<a href="https://github.com/Hrishank21s?tab=repositories"><img height="150" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Hrishank21s&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" /></a>
+<a href="https://github.com/Hrishank21s"><img height="170" src="stats.svg" alt="GitHub stats" /></a>
+<a href="https://github.com/Hrishank21s?tab=repositories"><img height="170" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Hrishank21s&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" /></a>
 
 </div>
 
