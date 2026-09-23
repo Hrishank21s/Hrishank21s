@@ -32,8 +32,10 @@ def count(q):
 iss, prs, rev = (count(f"author:{USER} type:issue"), count(f"author:{USER} type:pr"), count(f"reviewed-by:{USER} type:pr -author:{USER}"))
 priv_noncommit = max(0, (iss - tot["issues"]) + (prs - tot["prs"]) + (rev - tot["reviews"]))
 tot["commits"] -= min(priv_noncommit, tot["commits"])
+yr = gql(f'{{user(login:"{USER}"){{contributionsCollection{{contributionCalendar{{totalContributions}}}}}}}}')["contributionsCollection"]["contributionCalendar"]["totalContributions"]
 rows = [("Total Commits (public + private)", tot["commits"]), ("Pull Requests", max(prs, tot["prs"])),
         ("Issues", max(iss, tot["issues"])), ("Code Reviews", max(rev, tot["reviews"])),
+        ("Contributions (last 12 months)", yr),
         ("Repositories", u["repositories"]["totalCount"]),
         ("Stars Earned", sum(n["stargazerCount"] for n in u["repositories"]["nodes"]))]
 body = "".join(f'<text x="25" y="{65+i*26}" class="l">{k}</text><text x="395" y="{65+i*26}" class="v" text-anchor="end">{v}</text>'
