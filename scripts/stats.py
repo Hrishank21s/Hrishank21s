@@ -39,8 +39,15 @@ rows = [("Total Commits (public + private)", tot["commits"]), ("Pull Requests", 
         ("Contributions (last 12 months)", yr),
         ("Repositories", u["repositories"]["totalCount"]),
         ("Stars Earned", sum(n["stargazerCount"] for n in u["repositories"]["nodes"]))]
-body = "".join(f'<text x="25" y="{65+i*26}" class="l">{k}</text><text x="395" y="{65+i*26}" class="v" text-anchor="end">{v}</text>'
-               for i, (k, v) in enumerate(rows))
-open("stats.svg", "w").write(f'''<svg xmlns="http://www.w3.org/2000/svg" width="420" height="{85+len(rows)*26}" role="img" aria-label="GitHub stats">
+if os.path.exists("local-stats.json"):  # written by scripts/local_stats.py on the author's Mac; numbers only
+    L = json.load(open("local-stats.json"))
+    rows += [("Local Projects (this Mac)", L["projects"]), ("Local Lines of Code (unique)", f'{L["lines"]:,}'),
+             ("Work Sessions Logged", L["sessions"])]
+half = (len(rows) + 1) // 2
+def col(rs, x):
+    return "".join(f'<text x="{x}" y="{65+i*26}" class="l">{k}</text><text x="{x+270}" y="{65+i*26}" class="v" text-anchor="end">{v}</text>'
+                   for i, (k, v) in enumerate(rs))
+body = col(rows[:half], 25) + col(rows[half:], 325)
+open("stats.svg", "w").write(f'''<svg xmlns="http://www.w3.org/2000/svg" width="620" height="{85+half*26}" role="img" aria-label="GitHub stats">
 <style>.t{{font:600 18px 'Segoe UI',Ubuntu,sans-serif;fill:#70a5fd}}.l{{font:400 14px 'Segoe UI',Ubuntu,sans-serif;fill:#a9b1d6}}.v{{font:600 14px 'Segoe UI',Ubuntu,sans-serif;fill:#9ece6a}}</style>
 <rect width="100%" height="100%" rx="6" fill="#1a1b27"/><text x="25" y="35" class="t">{USER}'s GitHub Stats</text>{body}</svg>''')
