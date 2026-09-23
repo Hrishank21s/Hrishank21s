@@ -41,7 +41,7 @@ rows = [("Total Commits (public + private)", tot["commits"]), ("Pull Requests", 
         ("Stars Earned", sum(n["stargazerCount"] for n in u["repositories"]["nodes"]))]
 if os.path.exists("local-stats.json"):  # written by scripts/local_stats.py on the author's Mac; numbers only
     L = json.load(open("local-stats.json"))
-    rows += [("Local Projects (this Mac)", L["projects"]), ("Local Lines of Code (unique)", f'{L["lines"]:,}'),
+    rows += [("Local Projects", L["projects"]), ("Local Lines of Code (unique)", f'{L["lines"]:,}'),
              ("Work Sessions Logged", L["sessions"])]
 half = (len(rows) + 1) // 2
 def col(rs, x):
