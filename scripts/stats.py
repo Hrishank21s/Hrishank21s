@@ -11,7 +11,7 @@ def gql(q):
     assert "errors" not in d, d["errors"]
     return d["data"]["user"]
 
-u = gql(f'{{user(login:"{USER}"){{createdAt followers{{totalCount}} repositories(ownerAffiliations:OWNER){{totalCount nodes{{stargazerCount}}}}}}}}')
+u = gql(f'{{user(login:"{USER}"){{createdAt followers{{totalCount}} repositories(first:100,ownerAffiliations:OWNER){{totalCount nodes{{stargazerCount}}}}}}}}')
 tot = dict(commits=0, prs=0, issues=0, reviews=0)
 for y in range(int(u["createdAt"][:4]), dt.date.today().year + 1):
     c = gql(f'{{user(login:"{USER}"){{contributionsCollection(from:"{y}-01-01T00:00:00Z",to:"{y}-12-31T23:59:59Z"){{'
