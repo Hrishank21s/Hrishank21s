@@ -4,7 +4,6 @@
 
 **I build practical software, automation, AI tools and hardware — taking ideas from *"can we build this?"* to something actually running.**
 
-[![Website](https://img.shields.io/badge/Portfolio-hrishank21s.github.io-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white)](https://hrishank21s.github.io)
 [![GitHub followers](https://img.shields.io/github/followers/Hrishank21s?style=for-the-badge&logo=github&color=0f172a)](https://github.com/Hrishank21s)
 [![Connect with me](https://img.shields.io/badge/-Connect_with_me-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hrishank21s@gmail.com)
 
