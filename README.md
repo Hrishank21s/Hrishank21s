@@ -4,6 +4,9 @@
 
 **I build practical software, automation, AI tools and hardware — taking ideas from *"can we build this?"* to something actually running.**
 
+Hi, I'm **Hrishank Soni**, a full-stack and embedded developer. I build web apps and SaaS on **TypeScript, React, Node.js and Cloudflare Workers (D1/SQLite)**, self-hosted **AI agents and automation**, **Android apps**, and **ESP32 / IoT hardware** projects. Open to freelance work and collaboration.
+
+
 [![GitHub followers](https://img.shields.io/github/followers/Hrishank21s?style=for-the-badge&logo=github&color=0f172a)](https://github.com/Hrishank21s)
 [![Connect with me](https://img.shields.io/badge/-Connect_with_me-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hrishank21s@gmail.com)
 [![Portfolio](https://img.shields.io/badge/-Portfolio-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white)](https://hrishank21s.github.io)
