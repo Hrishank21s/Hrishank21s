@@ -23,6 +23,7 @@ Hi, I'm **Hrishank Soni**, a full-stack and embedded developer. I build web apps
 | ☕ **Weekend Rush Café** | QR ordering, Cashfree payments, chef dashboard and sales reports. |
 | 🏆 **Club Tournament** | End-to-end pool tournament platform: registration, brackets, live matches, results. |
 | 🤖 **AI & Dev Tooling** | Local AI, coding agents and automation — see [AgentOS](https://github.com/Hrishank21s/DIY-agent-OS). |
+| ⌨️ **Type Recall** | A browser typing game published on Y8 that trains memory as well as speed — [play it](https://www.y8.com/games/type_recall). |
 | 🛠️ **DIY / Hardware** | ESP and electronics projects alongside software. |
 
 Most of this is under active, private development. Public work is below.
@@ -35,6 +36,7 @@ Most of this is under active, private development. Public work is below.
 | [**AgentOS**](https://github.com/Hrishank21s/DIY-agent-OS) | Self-hosted personal AI agent platform for macOS — Fastify + React + SQLite, with the OpenCode CLI as a swappable AI brain. |
 | [**Portfolio site**](https://hrishank21s.github.io) | Overview of my work across AI, software, automation and hardware — [source](https://github.com/Hrishank21s/hrishank21s.github.io). |
 | [**Kali Dinali**](https://github.com/Hrishank21s/kali-dinali-releases) | Android shop-management app — release builds and install guide. |
+| [**Type Recall**](https://github.com/Hrishank21s/type-recall) | Read-ahead typing game: upcoming words vanish and you type them from memory. [▶ Play on Y8](https://www.y8.com/games/type_recall) · [gameplay video](https://github.com/Hrishank21s/type-recall/blob/main/media/typerecall.mp4). |
 
 ## 🤝 Work with me
 
