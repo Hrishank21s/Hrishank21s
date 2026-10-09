@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="banner.gif?v=3" width="100%" alt="Hrishank Soni — Builder, Developer, Maker. Pac-Man eats code tokens, chases ghosts through an arcade maze." />
+<img src="banner.svg" width="100%" alt="Hrishank Soni — Builder, Developer, Maker. Animated circuit board with signal pulses flowing into a floating 3D chip." />
 
 **I build practical software, automation, AI tools and hardware — taking ideas from *"can we build this?"* to something actually running.**
 

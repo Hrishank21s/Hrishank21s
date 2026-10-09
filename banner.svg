@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+<style>
+.tr{fill:none;stroke:#134e3a;stroke-width:3;stroke-linejoin:round}
+.via{fill:#03120d;stroke:#b8873b;stroke-width:2.5}
+.pl{fill:none;stroke:#4ade80;stroke-width:3;stroke-linecap:round;stroke-dasharray:26 900;stroke-dashoffset:926;animation:run linear infinite}
+@keyframes run{to{stroke-dashoffset:0}}
+.pin{fill:none;stroke:#cbd5e1;stroke-width:2.5}
+.name{font:800 64px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif;fill:#ecfdf5;letter-spacing:-1px}
+.sub{font:600 15px ui-monospace,Menlo,Consolas,monospace;letter-spacing:5px;fill:#86efac}
+.tag{font:600 12px ui-monospace,Menlo,Consolas,monospace;fill:#b8873b;letter-spacing:2px}
+.role{font:600 16px ui-monospace,Menlo,Consolas,monospace;fill:#d1fae5;opacity:0;animation:rl 8s infinite}
+.r0{animation-delay:0s}.r1{animation-delay:2s}.r2{animation-delay:4s}.r3{animation-delay:6s}
+@keyframes rl{0%{opacity:0}2%,21%{opacity:1}23.5%,100%{opacity:0}}
+.cur{fill:#4ade80;animation:bl 1s steps(1) infinite} @keyframes bl{50%{opacity:0}}
+.core{animation:co 2.4s ease-in-out infinite} @keyframes co{0%,100%{opacity:.45}50%{opacity:1}}
+.led{animation:bl 1.3s steps(1) infinite}
+</style>
+<defs>
+<pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="8" cy="8" r="1" fill="#0f3d2c"/></pattern>
+<radialGradient id="bg" cx=".8" cy=".6" r=".9"><stop offset="0" stop-color="#062a1d"/><stop offset="1" stop-color="#020b08"/></radialGradient>
+<radialGradient id="beam" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#4ade80" stop-opacity=".45"/><stop offset="1" stop-color="#4ade80" stop-opacity="0"/></radialGradient>
+<linearGradient id="ctop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f2937"/><stop offset="1" stop-color="#0b1120"/></linearGradient>
+<filter id="neon" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="txtfade" x1="0" x2="1"><stop offset="0" stop-color="#000"/><stop offset=".45" stop-color="#000"/><stop offset=".62" stop-color="#fff"/></linearGradient>
+<mask id="tm"><rect width="1200" height="300" fill="#fff"/><rect x="40" y="40" width="660" height="160" fill="#000" opacity=".92" rx="20"/></mask>
+<clipPath id="card"><rect width="1200" height="300" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#card)">
+<rect width="1200" height="300" fill="url(#bg)"/><rect width="1200" height="300" fill="url(#dots)"/>
+<g mask="url(#tm)"><polyline points="950.0,176.1 930.0,176.1 885.0,131.1 221.0,131.1" class="tr"/><polyline points="930.0,187.6 896.0,187.6 860.0,151.6 290.0,151.6" class="tr"/><polyline points="910.0,199.2 862.0,199.2 835.0,172.2 85.0,172.2" class="tr"/><polyline points="890.0,210.7 828.0,210.7 810.0,192.7 385.0,192.7" class="tr"/><polyline points="870.0,222.2 794.0,222.2 785.0,213.2 470.0,213.2" class="tr"/><polyline points="872.5,235.2 810.5,235.2 799.5,246.2 138.0,246.2" class="tr"/><polyline points="897.5,249.6 849.5,249.6 827.5,271.6 72.0,271.6" class="tr"/><polyline points="922.5,264.1 888.5,264.1 855.5,297.1 48.0,297.1" class="tr"/><polyline points="947.5,278.5 927.5,278.5 883.5,322.5 0.0,322.5" class="tr"/><polyline points="976.7,179.9 996.7,179.9 1026.7,149.9 1220.0,149.9" class="tr"/><polyline points="1010.0,199.2 1042.0,199.2 1062.0,179.2 1220.0,179.2" class="tr"/><polyline points="1043.3,218.4 1087.3,218.4 1097.3,208.4 1220.0,208.4" class="tr"/><polyline points="1043.3,237.6 1087.3,237.6 1097.3,247.6 1220.0,247.6" class="tr"/><polyline points="1010.0,256.9 1042.0,256.9 1062.0,276.9 1220.0,276.9" class="tr"/><polyline points="976.7,276.1 996.7,276.1 1026.7,306.1 1220.0,306.1" class="tr"/><g filter="url(#neon)"><polyline points="221.0,131.1 885.0,131.1 930.0,176.1 950.0,176.1" class="pl" style="animation-duration:2.36s;animation-delay:-2.75s"/><polyline points="290.0,151.6 860.0,151.6 896.0,187.6 930.0,187.6" class="pl" style="animation-duration:2.92s;animation-delay:-2.30s"/><polyline points="85.0,172.2 835.0,172.2 862.0,199.2 910.0,199.2" class="pl" style="animation-duration:2.11s;animation-delay:-1.61s"/><polyline points="385.0,192.7 810.0,192.7 828.0,210.7 890.0,210.7" class="pl" style="animation-duration:2.19s;animation-delay:-0.52s"/><polyline points="470.0,213.2 785.0,213.2 794.0,222.2 870.0,222.2" class="pl" style="animation-duration:1.95s;animation-delay:-0.64s"/><polyline points="138.0,246.2 799.5,246.2 810.5,235.2 872.5,235.2" class="pl" style="animation-duration:3.10s;animation-delay:-2.49s"/><polyline points="72.0,271.6 827.5,271.6 849.5,249.6 897.5,249.6" class="pl" style="animation-duration:2.93s;animation-delay:-2.40s"/><polyline points="48.0,297.1 855.5,297.1 888.5,264.1 922.5,264.1" class="pl" style="animation-duration:2.07s;animation-delay:-0.93s"/><polyline points="0.0,322.5 883.5,322.5 927.5,278.5 947.5,278.5" class="pl" style="animation-duration:2.68s;animation-delay:-2.20s"/><polyline points="1220.0,149.9 1026.7,149.9 996.7,179.9 976.7,179.9" class="pl" style="animation-duration:3.00s;animation-delay:-2.64s"/><polyline points="1220.0,179.2 1062.0,179.2 1042.0,199.2 1010.0,199.2" class="pl" style="animation-duration:1.92s;animation-delay:-1.82s"/><polyline points="1220.0,208.4 1097.3,208.4 1087.3,218.4 1043.3,218.4" class="pl" style="animation-duration:2.74s;animation-delay:-1.52s"/><polyline points="1220.0,247.6 1097.3,247.6 1087.3,237.6 1043.3,237.6" class="pl" style="animation-duration:2.05s;animation-delay:-1.42s"/><polyline points="1220.0,276.9 1062.0,276.9 1042.0,256.9 1010.0,256.9" class="pl" style="animation-duration:1.93s;animation-delay:-2.80s"/><polyline points="1220.0,306.1 1026.7,306.1 996.7,276.1 976.7,276.1" class="pl" style="animation-duration:3.01s;animation-delay:-1.64s"/></g><circle cx="221.0" cy="131.1" r="4" class="via"/><circle cx="290.0" cy="151.6" r="4" class="via"/><circle cx="85.0" cy="172.2" r="4" class="via"/><circle cx="385.0" cy="192.7" r="4" class="via"/><circle cx="470.0" cy="213.2" r="4" class="via"/><circle cx="138.0" cy="246.2" r="4" class="via"/><circle cx="72.0" cy="271.6" r="4" class="via"/><circle cx="48.0" cy="297.1" r="4" class="via"/></g>
+<polygon points="960.0,170.3 1060.0,228.0 960.0,285.7 860.0,228.0" fill="#03120d" stroke="#b8873b" stroke-width="2"/>
+<polygon points="960.0,178.4 1046.0,228.0 960.0,277.6 874.0,228.0" fill="none" stroke="#b8873b" stroke-width="1" stroke-dasharray="4 5" opacity=".7"/>
+<ellipse cx="960" cy="228" rx="90" ry="40" fill="url(#beam)" class="core"/>
+<g>
+  <animateTransform attributeName="transform" type="translate" values="960 118;960 106;960 118" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/>
+  <path d="M-68.2 25.6l-5.0 3v7" class="pin"/><path d="M9.8 59.4l5.0 3v7" class="pin"/><path d="M-58.5 31.3l-5.0 3v7" class="pin"/><path d="M19.5 53.8l5.0 3v7" class="pin"/><path d="M-48.8 36.9l-5.0 3v7" class="pin"/><path d="M29.2 48.1l5.0 3v7" class="pin"/><path d="M-39.0 42.5l-5.0 3v7" class="pin"/><path d="M39.0 42.5l5.0 3v7" class="pin"/><path d="M-29.2 48.1l-5.0 3v7" class="pin"/><path d="M48.8 36.9l5.0 3v7" class="pin"/><path d="M-19.5 53.8l-5.0 3v7" class="pin"/><path d="M58.5 31.3l5.0 3v7" class="pin"/><path d="M-9.8 59.4l-5.0 3v7" class="pin"/><path d="M68.2 25.6l5.0 3v7" class="pin"/>
+  <polygon points="-78.0,0.0 0.0,45.0 0.0,65.0 -78.0,20.0" fill="#0b1120"/><polygon points="78.0,0.0 0.0,45.0 0.0,65.0 78.0,20.0" fill="#111827"/>
+  <polygon points="0.0,-45.0 78.0,0.0 0.0,45.0 -78.0,0.0" fill="url(#ctop)" stroke="#334155" stroke-width="1"/>
+  <polygon points="0.0,-23.1 40.0,0.0 0.0,23.1 -40.0,0.0" fill="#4ade80" opacity=".12" class="core"/>
+  <polygon points="0.0,-23.1 40.0,0.0 0.0,23.1 -40.0,0.0" fill="none" stroke="#4ade80" stroke-width="1.5" class="core" filter="url(#neon)"/>
+  <text transform="matrix(.866 .5 -.866 .5 0 0)" text-anchor="middle" y="5" class="tag" fill="#86efac" style="fill:#86efac;font-size:13px">HS-21</text>
+  <circle cx="-56" cy="0" r="3" fill="#f87171" class="led" filter="url(#neon)"/>
+</g>
+<text x="60" y="100" class="name" style="text-shadow:0 0 18px #22c55e88">Hrishank Soni</text>
+<text x="64" y="132" class="sub">BUILDER · DEVELOPER · MAKER</text>
+<text x="64" y="176" class="role r0"><tspan fill="#4ade80">[ OK ]</tspan> init software<tspan class="cur">█</tspan></text><text x="64" y="176" class="role r1"><tspan fill="#4ade80">[ OK ]</tspan> init automation<tspan class="cur">█</tspan></text><text x="64" y="176" class="role r2"><tspan fill="#4ade80">[ OK ]</tspan> init ai_tools<tspan class="cur">█</tspan></text><text x="64" y="176" class="role r3"><tspan fill="#4ade80">[ OK ]</tspan> init hardware<tspan class="cur">█</tspan></text>
+<text x="64" y="268" class="tag">REV 2026 · U1 · DESIGNED &amp; BUILT BY HAND</text>
+<rect x="1" y="1" width="1198" height="298" rx="17" fill="none" stroke="#b8873b" stroke-opacity=".5" stroke-width="2"/>
+<circle cx="22" cy="22" r="6" class="via"/><circle cx="1178" cy="22" r="6" class="via"/><circle cx="22" cy="278" r="6" class="via"/><circle cx="1178" cy="278" r="6" class="via"/>
+</g>
+</svg>
