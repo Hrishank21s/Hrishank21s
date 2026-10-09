@@ -27,13 +27,20 @@ Hi, I'm **Hrishank Soni**, a full-stack and embedded developer. I build web apps
 
 Most of this is under active, private development. Public work is below.
 
-## ⭐ Featured
+## ⭐ Public projects you can explore
 
 | Project | What it is |
 | --- | --- |
+| [**Lead Generation Manager**](https://github.com/Hrishank21s/lead-generation-manager) | Local, open-source AI-assisted lead research and client-onboarding CRM. [See dashboard screenshot](https://github.com/Hrishank21s/lead-generation-manager/blob/main/docs/dashboard.png). **Prototype**. |
 | [**AgentOS**](https://github.com/Hrishank21s/DIY-agent-OS) | Self-hosted personal AI agent platform for macOS — Fastify + React + SQLite, with the OpenCode CLI as a swappable AI brain. |
 | [**Portfolio site**](https://hrishank21s.github.io) | Overview of my work across AI, software, automation and hardware — [source](https://github.com/Hrishank21s/hrishank21s.github.io). |
 | [**Kali Dinali**](https://github.com/Hrishank21s/kali-dinali-releases) | Android shop-management app — release builds and install guide. |
+
+## 🤝 Work with me
+
+I help small businesses and founders build or rebuild **responsive websites, internal dashboards, booking and billing systems, lightweight SaaS products, and practical automations**. I work across the UI, backend, database, integrations, testing and deployment.
+
+**Have a project?** [Explore my portfolio and live product walkthroughs](https://hrishank21s.github.io/) or [email me with your requirements](mailto:hrishank21s@gmail.com?subject=Project%20enquiry).
 
 ## 🧰 Tech I Use
 
