@@ -23,6 +23,7 @@ for i in range(6):                                   # right side
     o = 20 + (i if i < 3 else 5 - i) * 12
     traces.append([(x, y), (x + o, y), (x + o + abs(dy), y + dy), (W + 20, y + dy)])
 
+traces = [P for P in traces if all(18 < y < 270 for _, y in P)]
 tr_svg = "".join(f'<polyline points="{pts(P)}" class="tr"/>' for P in traces)
 via_svg = "".join(f'<circle cx="{P[-1][0]:.1f}" cy="{P[-1][1]:.1f}" r="4" class="via"/>' for P in traces if 0 < P[-1][0] < W)
 pulse_svg = "".join(
@@ -69,7 +70,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{
 <linearGradient id="ctop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f2937"/><stop offset="1" stop-color="#0b1120"/></linearGradient>
 <filter id="neon" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 <linearGradient id="txtfade" x1="0" x2="1"><stop offset="0" stop-color="#000"/><stop offset=".45" stop-color="#000"/><stop offset=".62" stop-color="#fff"/></linearGradient>
-<mask id="tm"><rect width="{W}" height="{H}" fill="#fff"/><rect x="40" y="40" width="660" height="160" fill="#000" opacity=".92" rx="20"/></mask>
+<mask id="tm"><rect width="{W}" height="{H}" fill="#fff"/><rect x="40" y="40" width="660" height="160" fill="#000" opacity=".92" rx="20"/><rect x="50" y="248" width="420" height="30" fill="#000" rx="6"/></mask>
 <clipPath id="card"><rect width="{W}" height="{H}" rx="18"/></clipPath>
 </defs>
 <g clip-path="url(#card)">
@@ -85,7 +86,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{
   <polygon points="{top}" fill="url(#ctop)" stroke="#334155" stroke-width="1"/>
   <polygon points="{ci}" fill="#4ade80" opacity=".12" class="core"/>
   <polygon points="{ci}" fill="none" stroke="#4ade80" stroke-width="1.5" class="core" filter="url(#neon)"/>
-  <text transform="matrix(.866 .5 -.866 .5 0 0)" text-anchor="middle" y="5" class="tag" fill="#86efac" style="fill:#86efac;font-size:13px">HS-21</text>
+  <text transform="matrix(.866 .5 -.866 .5 0 0)" text-anchor="middle" y="5" class="tag" fill="#86efac" style="fill:#022c16;font-size:13px;font-weight:800">HS-21</text>
   <circle cx="{-hw + 22}" cy="0" r="3" fill="#f87171" class="led" filter="url(#neon)"/>
 </g>
 <text x="60" y="100" class="name" style="text-shadow:0 0 18px #22c55e88">Hrishank Soni</text>
