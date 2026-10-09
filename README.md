@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="banner.svg" width="100%" alt="Hrishank Soni — Builder, Developer, Maker. Animated circuit board with signal pulses flowing into a floating 3D chip." />
+<img src="decor/banner.svg" width="100%" alt="Hrishank Soni — Builder, Developer, Maker. Animated circuit board with signal pulses flowing into a floating 3D chip." />
 
 **I build practical software, automation, AI tools and hardware — taking ideas from *"can we build this?"* to something actually running.**
 
@@ -76,6 +76,6 @@ I learn by building — turning rough ideas into working systems and improving t
 
 <div align="center">
 
-<img src="footer.svg" width="100%" alt="Animated circuit board: a pick-and-place machine assembles chips, the board heats up, and a fan cools it down." />
+<img src="decor/footer.svg" width="100%" alt="Animated circuit board: a pick-and-place machine assembles chips, the board heats up, and a fan cools it down." />
 
 </div>
