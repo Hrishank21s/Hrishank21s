@@ -76,6 +76,6 @@ I learn by building — turning rough ideas into working systems and improving t
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=90&color=0:6366f1,100:0f172a&section=footer" alt="" />
+<img src="footer.svg" width="100%" alt="Animated circuit board: a pick-and-place machine assembles chips, the board heats up, and a fan cools it down." />
 
 </div>
