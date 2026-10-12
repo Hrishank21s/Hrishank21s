@@ -10,6 +10,9 @@ Hi, I'm **Hrishank Soni**, a full-stack and embedded developer. I build web apps
 [![GitHub followers](https://img.shields.io/github/followers/Hrishank21s?style=for-the-badge&logo=github&color=0f172a)](https://github.com/Hrishank21s)
 [![Connect with me](https://img.shields.io/badge/-Connect_with_me-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hrishank21s@gmail.com)
 [![Portfolio](https://img.shields.io/badge/-Portfolio-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white)](https://hrishank21s.github.io)
+[![Hire me on Upwork](https://img.shields.io/badge/-Hire_me_on_Upwork-14a800?style=for-the-badge&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~01e7d1cfb0c7b0dade)
+
+**🟢 Available for freelance work:** Cloudflare Workers / D1 backends · payment & webhook integrations · React dashboards · Android apps · ESP32 prototypes
 
 </div>
 
@@ -40,9 +43,20 @@ Most of this is under active, private development. Public work is below.
 
 ## 🤝 Work with me
 
-I help small businesses and founders build or rebuild **responsive websites, internal dashboards, booking and billing systems, lightweight SaaS products, and practical automations**. I work across the UI, backend, database, integrations, testing and deployment.
+I help small businesses and founders ship working software, from idea to production, and fix systems that are stuck.
 
-**Have a project?** [Explore my portfolio and live product walkthroughs](https://hrishank21s.github.io/) or [email me with your requirements](mailto:hrishank21s@gmail.com?subject=Project%20enquiry).
+| I can help you with | Proof |
+| --- | --- |
+| **Cloudflare Workers / D1 / R2 backends:** build, debug, migrate, deploy safely with rollback | TableTracker, Café and Club Tournament all run live on Workers + D1 |
+| **Payments & webhooks:** checkout, signature verification, idempotent order handling, refunds | Cashfree integrations in the Café and Club Tournament |
+| **Booking, billing & internal dashboards** | TableTracker: live table timers, billing, customer ledger, online booking |
+| **Android apps** (Kotlin/Java), including offline-first | Kali Dinali shop app, the Café's chef app |
+| **AI agents & automation** | [AgentOS](https://github.com/Hrishank21s/DIY-agent-OS), [Lead Generation Manager](https://github.com/Hrishank21s/lead-generation-manager) |
+| **ESP32 / IoT prototypes** | Bluetooth presence scanner, 433 MHz monitors |
+
+Every product ships with automated tests (1,350+ across my projects). You get clear updates and code the next developer can maintain.
+
+**Have a project?** [Hire me on Upwork](https://www.upwork.com/freelancers/~01e7d1cfb0c7b0dade) · [email your requirements](mailto:hrishank21s@gmail.com?subject=Project%20enquiry) · [see live walkthroughs](https://hrishank21s.github.io/)
 
 ## 🧰 Tech I Use
 
